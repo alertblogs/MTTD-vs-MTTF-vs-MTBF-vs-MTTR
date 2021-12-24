@@ -1,40 +1,79 @@
-AlertOps Expert Guidance
+MTTD vs MTTF vs MTBF vs MTTR
 ========
 
- 
-The phrase ‘stakeholder management” assumes that stakeholders are truly informed by alerts. However, managers can only send communications out, they cannot force people to address them. To ensure your stakeholders are engaged during an incident, it is vital to set up a defined communication process. Yet, a recent Red Canary report1 found that 43% of surveyed participants lack readiness to notify the public and/or its customers in the event of a security breach. Without a clear strategy in place, communication can get lost in the chaos leaving stakeholders uninformed.
+Your development and operations (DevOps) team must measure using MTTR – MTTD – MTBF – MTTF in day-to-day progress. Otherwise, they won’t know how they’re performing at any given moment.
 
-Not One Size Fits All
+DevOps teams that lack data-driven insights such as mean time to resolve (mttr)  and so risk falling behind. This means missing service-level agreements (SLAs) and encountering various service problems that could put business critical services at risk and so they must integrate measurements  like MTTR,  MTTD, MTTF, MTBF etc into the operations.
+Defining DevOps KPIs (MTTR,  MTTD, MTTF, MTBF)
+
+It’s important to know what data to collect and how to evaluate it. That way, DevOps professionals can use proven metrics to track individual and team progress over an extended period of time.
+Now, let’s take a look at four key DevOps KPIs to consider:
+
+1.Mean Time to Detect (MTTD)
+====
+Mean time to detect or discover (MTTD) is a key performance indicator (KPI) for IT Incident Management and refers to the average amount of time it takes to discover an issue. It measures the period between the beginning of a system outage, service malfunction or any other revenue-generating activity and the amount of time it takes a DevOps or Incident Management team to identify this issue.
+
+Calculating MTTD is simple. To do so look at the total number of incidents over the course of a period, and calculate the difference between the start of the incident and the time it took the team to detect the incident.
+
+For example, if the incident started at 8:00 a.m. and the team detected it at 8:15 a.m. then the time to detect is 15 minutes. From here it’s easy to take the average over a period of time (2 weeks, 1 month, 1 quarter, 1 year) to calculate the mean time to detect (MTTD).
+
+MTTD is a great metric for DevOps teams that want to track the effectiveness of their incident management tools and processes. If these tools and processes work properly, a DevOps team should have no trouble keeping its MTTD low.
+
+Conversely, if subpar incident management tools and processes are in place, a DevOps team may struggle to quickly detect and address incidents, resulting in an increased chance of a critical incident with potential business-impacting implications.
+
+2. Mean Time to Failure (MTTF)
+====
+Mean time to failure (MTTF), aka “uptime,” is the average amount of time a defective system can continue running before it fails. Time starts when a serious defect in a system occurs and, it ends when the system completely fails. MTTF is used to monitor the status of non-repairable system components and analyze how long a component will perform in the field before it fails.
+
+When defining failure, MTTF often helps a DevOps team track the status of components used in mission-critical systems. Because these systems must always be operational, MTTF enables a DevOps team to understand how long system components will continue to work before they need to be replaced.
+
+As a result, DevOps teams can use MTTF to prepare for system failures.
+
+Generally, MTTF data is collected by running hundreds or thousands of system components at the same time for many hours, days or weeks. Once DevOps teams have MTTF data, they can understand the reliability of their mission-critical systems. These teams can then use this data to find ways to limit the risk of costly, time-intensive system failures.
+
+3.Mean Time Between Failures (MTBF)
 =====
-Sending the same notification to all your stakeholders can cause a lot of confusion and create unwanted alert noise. Some users shouldn’t receive technical information, others require all the nitty gritty details. Every alert should be tailored based on a user’s expertise or role.
-Means of Communication
+Mean time between failures (MTBF) is a reliability and availability metric. It is used to measure the ability of a system or component to perform its required functions under stated conditions for a set amount of time.
 
-Strategize mode(s) of communication to be used when communicating with stakeholders. Understand which tools engage stakeholders the most. It is also vital to unify these channels for streamlined points of contact.
+Also, MTBF allows a DevOps team to measure the degree to which a system or component is operational and accessible when required for use.
 
-Automate Processes
+To calculate MTBF, a DevOps team needs to look at the elapsed time between system failures during everyday operations. MTBF is typically measured in hours, and the average MTBF for each hardware can vary.
+
+For example, the MTBF of a hard disk drive may total 300,000 hours, while the MTBF for a light bulb may be around 10,000 hours.
+
+A DevOps team should strive to keep its MTBF as high as possible – regardless of the system or component that is being measured. With MTBF data in hand, a DevOps team can accurately predict a service’s reliability and availability levels.
+
+4.Mean Time to Resolve (MTTR)
 ====
-Engaging stakeholders can take up a lot of time. Automate stakeholder communications to ensure efficient delivery of insightful information. Implement AlertOps so you can focus on getting ahead of incidents while knowing your alerts reach the right person, through the right channel, every time. Sending regular updates to stakeholders during an incident is vital to keep them calm. Automation addresses your stakeholders’ needs while ensuring they remain aligned with minimal manual work.
+Mean time to Resolve (MTTR) refers to the time it takes to fix a failed system. It is also known as mean time to resolution. It is a measure of the average amount of time a DevOps team needs to repair an inactive system after a failure.
 
-Clarity
-====
-A highly flexible incident management and alert automation tool, AlertOps is powered by an open API, with the ability to connect with practically any communication tool. Once plugged in, AlertOps delivers alerts with relevant incident information so that stakeholders can stay in the loop from detection to resolution.
-Any Way You Want It…
+For example, let’s consider a DevOps team that faces four network outages in one week. If this DevOps team requires a total of 60 minutes to resolve all four outages, its MTTR is 15 minutes, i.e. the average amount of time it takes to get the inactive network operational, or a hot fix deployed on production.
 
-Since you use multiple channels for communication, you need an alerting system that sends alerts through multiple communication channels. AlertOps delivers alerts any way you want. Receive alerts by phone, SMS, or email. Even integrate with all your favorite chat tools, such as Slack and Microsoft Teams, so that users receive alerts where they are most likely to see them.
+MTTR is a valuable metric because it allows a DevOps team to find ways to reduce or eliminate downtime – an expensive problem for organizations around the globe. A  recent Information Technology Intelligence Consulting survey indicated the average cost of downtime for organizations has increased every year between 2008 and 2016. Additionally, the survey revealed 98 percent of organizations said a single hour of downtime costs $100,000, and 33 percent noted one hour of downtime costs between $1 million and $5 million.
 
-Insightful Notifications
-====
-Alerts are only useful if they contain information relevant to the user. With AlertOps, customized messages make it easy for stakeholders to quickly understand an incident. They can also receive updates throughout the course of handling the incident. Make sure emails are actionable as well. Send emails in rich text and HTML to include graphs, images, custom links, runbook links or links to a conference bridge for any alert. The solution even offers voice messages with incident details from the embedded phone system.
+Ultimately, the lower a DevOps team’s MTTR, the better. When a DevOps team analyzes MTTR regularly, they’re better equipped to identify potential problems that could lead to downtime.
 
-Conclusion
-====
-Effective incident response requires, not only sending the right information to the right people, but also ensuring those stakeholders are engaged and truly informed. It is vital to have a plan in place for ensuring that each type of stakeholder receives only the information he or she needs. AlertOps ensures that your alerts reach the right person, through the right channel, every time.
+Incorporate Key Metrics  ( MTTR – MTTD – MTBF – MTTF)  Into Your Day-to-Day Operations
+=====
+Metrics are critical, particularly for DevOps teams that want to perform their best. Yet integrating MTTD, MTTF, MTBF, MTTR and other service-level measurements into a company’s day-to-day operations can prove difficult.
 
-1 Red Canary 2021 Threat Detection Report
+Luckily, we’re here to help you take a data-driven approach to measure service levels and ensure optimal performance. Here are five tips to help you integrate key metrics into your business’ everyday activities:
+
+    Establish business goals. There is no need to use metrics just for the sake of having metrics. Instead, metrics must support your company and both its short and long-term goals. If you consider your company’s goals and how monitoring specific metrics can help you accomplish these goals, you can determine the ideal metrics to track on a day-to-day basis.
+    Take a data-driven approach to measurement. Key performance indicators (KPIs) should empower DevOps teams with data and insights they can use to make meaningful business improvements. Thus, all KPIs must be measurable. If you can measure your DevOps team’s progress, you can create realistic goals and determine the best steps to achieve them.>
+    Deploy qualitative and quantitative KPIs. Qualitative KPIs like user feedback and quantitative KPIs such as daily active users or revenue allow you to track a DevOps team’s performance from all angles. Then, your DevOps team can use this information to map out its everyday efforts accordingly.
+    Identify trends. A deep dive into data allows a DevOps team to find trends. With this information, a DevOps team can make data-driven predictions.
+    Use a scorecard. A DevOps KPIs scorecard makes it simple for a DevOps team to review all pertinent metrics at once.
+
+For DevOps teams that want to get the most out of their metrics, an incident monitoring and alerting system may be beneficial too.
+
+This system allows a DevOps team to automatically track incidents. Plus, a DevOps team can utilize an incident tracking system to find out why incidents are happening, how its time and resources are being used and much more.
+
+Getting the most out of metrics may be difficult, especially for a DevOps team with limited time and resources at its disposal. Thanks to an incident management alerting system, a DevOps team can streamline incident data collection and reporting. If you deploy a best-in-class incident response system today, you could help your DevOps team generate actionable insights to drive unprecedented CI/CD productivity and efficiency.
 
 source:
 ====
-https://alertops.com/red-canary-says-43-lack-readiness-to-notify-customers-of-a-security-breach/
+https://alertops.com/mttd-vs-mttf-vs-mtbf-vs-mttr/
 
 Read more:
 ====
